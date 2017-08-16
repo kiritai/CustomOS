@@ -37,11 +37,11 @@ GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor(uint32_t base, uint3
 	{
 		if ((limit & 0xFFF) != 0xFFF)
 		{
-			limit = (limit << 12) - 1;
+			limit = (limit >> 12) - 1;
 		}
 		else
 		{
-			limit = limit << 12;
+			limit = limit >> 12;
 		}
 
 		target[6] = 0xC0;

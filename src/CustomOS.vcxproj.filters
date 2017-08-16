@@ -24,6 +24,9 @@
     <ClCompile Include="port.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="interrupts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gdt.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interrupts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

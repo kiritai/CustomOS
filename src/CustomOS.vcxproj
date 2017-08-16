@@ -72,11 +72,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="gdt.cpp" />
+    <ClCompile Include="interrupts.cpp" />
     <ClCompile Include="kernel.cpp" />
     <ClCompile Include="port.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gdt.h" />
+    <ClInclude Include="interrupts.h" />
     <ClInclude Include="port.h" />
     <ClInclude Include="types.h" />
   </ItemGroup>

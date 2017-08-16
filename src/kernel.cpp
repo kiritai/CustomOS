@@ -57,10 +57,10 @@ extern "C" void callConstructors()
 extern "C" void kernelMain(const void* multiboot_structure, uint32_t /*multiboot_magic*/)
 {
 	printf((char *)"Howtech OS\n");
-	printf((char *)"Now loading ...");
+	printf((char *)"Now loading ...\n\n");
 
 	GlobalDescriptorTable globalDescriptorTable;
-	InterruptManager interrupts(&globalDescriptorTable);
+	InterruptManager interrupts(0x20, &globalDescriptorTable);
 
 	interrupts.Activate();
 
