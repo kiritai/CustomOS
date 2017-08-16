@@ -1,0 +1,4 @@
+File name references are in order or creation
+
+Global Descriptor Table         = gdt.cpp / gdt.h
+Ports                           = ports.cpp / ports.h
